@@ -40,6 +40,19 @@ class CalculatorScreen: UIView {
     }()
     
     // Preço Alcool - TextField
+//    lazy var ethanolPriceTextField: UITextField = {
+//        let tf = UITextField()
+//        tf.translatesAutoresizingMaskIntoConstraints = false
+//        tf.autocorrectionType = .no
+//        tf.backgroundColor = .white
+//        tf.borderStyle = .roundedRect
+//        tf.keyboardType = .decimalPad
+//        tf.placeholder = "Preço do Álcool"
+//        tf.textColor = .black
+//        tf.addDoneButtonOnKeyboard()
+//        return tf
+//    }()
+    
     lazy var ethanolPriceTextField: UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
@@ -47,13 +60,31 @@ class CalculatorScreen: UIView {
         tf.backgroundColor = .white
         tf.borderStyle = .roundedRect
         tf.keyboardType = .decimalPad
-        tf.placeholder = "Preço do Álcool"
-        tf.textColor = .darkGray
+        
+        let placeholderAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.black, // Cor
+            .font: UIFont.systemFont(ofSize: 14) //  Fonte
+        ]
+        tf.attributedPlaceholder = NSAttributedString(string: "Preço do Álcool", attributes: placeholderAttributes)
+        
+        tf.textColor = .black
         tf.addDoneButtonOnKeyboard()
         return tf
     }()
     
     // Preço Gasolina - TextField
+//    lazy var gasPriceTextField: UITextField = {
+//        let tf = UITextField()
+//        tf.translatesAutoresizingMaskIntoConstraints = false
+//        tf.autocorrectionType = .no
+//        tf.backgroundColor = .white
+//        tf.borderStyle = .roundedRect
+//        tf.keyboardType = .decimalPad
+//        tf.placeholder = "Preço da Gasolina"
+//        tf.textColor = .black
+//        tf.addDoneButtonOnKeyboard()
+//        return tf
+//    }()
     lazy var gasPriceTextField: UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
@@ -61,8 +92,14 @@ class CalculatorScreen: UIView {
         tf.backgroundColor = .white
         tf.borderStyle = .roundedRect
         tf.keyboardType = .decimalPad
-        tf.placeholder = "Preço da Gasolina"
-        tf.textColor = .darkGray
+        
+        let placeholderAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.black, // Cor
+            .font: UIFont.systemFont(ofSize: 14) //  Fonte
+        ]
+        tf.attributedPlaceholder = NSAttributedString(string: "Preço da Gasolina", attributes: placeholderAttributes)
+        
+        tf.textColor = .black
         tf.addDoneButtonOnKeyboard()
         return tf
     }()

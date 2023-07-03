@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151CE9182D1E609932613598 /* Pods_AlcoolOuGasolina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E44C8AF1D96957C803C7594 /* Pods_AlcoolOuGasolina.framework */; };
 		71813EE02A5063CE00D51CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EDF2A5063CE00D51CE8 /* AppDelegate.swift */; };
 		71813EE22A5063CE00D51CE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EE12A5063CE00D51CE8 /* SceneDelegate.swift */; };
 		71813EE42A5063CE00D51CE8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EE32A5063CE00D51CE8 /* HomeVC.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E44C8AF1D96957C803C7594 /* Pods_AlcoolOuGasolina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoolOuGasolina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71813EDC2A5063CE00D51CE8 /* AlcoolOuGasolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoolOuGasolina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71813EDF2A5063CE00D51CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71813EE12A5063CE00D51CE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		71813F062A5346B500D51CE8 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		71813F092A535A9A00D51CE8 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
 		71813F0B2A535D6D00D51CE8 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		B018B248C34891FDCC3F5096 /* Pods-AlcoolOuGasolina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoolOuGasolina.debug.xcconfig"; path = "Target Support Files/Pods-AlcoolOuGasolina/Pods-AlcoolOuGasolina.debug.xcconfig"; sourceTree = "<group>"; };
+		F2B1500D6DCC5688FEEF697B /* Pods-AlcoolOuGasolina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoolOuGasolina.release.xcconfig"; path = "Target Support Files/Pods-AlcoolOuGasolina/Pods-AlcoolOuGasolina.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151CE9182D1E609932613598 /* Pods_AlcoolOuGasolina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 			children = (
 				71813EDE2A5063CE00D51CE8 /* AlcoolOuGasolina */,
 				71813EDD2A5063CE00D51CE8 /* Products */,
+				F665406811422A314B1270AE /* Pods */,
+				D5108535C1F9E4136E68DDB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +159,24 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		D5108535C1F9E4136E68DDB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E44C8AF1D96957C803C7594 /* Pods_AlcoolOuGasolina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F665406811422A314B1270AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B018B248C34891FDCC3F5096 /* Pods-AlcoolOuGasolina.debug.xcconfig */,
+				F2B1500D6DCC5688FEEF697B /* Pods-AlcoolOuGasolina.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71813EF02A5063D000D51CE8 /* Build configuration list for PBXNativeTarget "AlcoolOuGasolina" */;
 			buildPhases = (
+				6ED8F20AE159451F99B26A2B /* [CP] Check Pods Manifest.lock */,
 				71813ED82A5063CE00D51CE8 /* Sources */,
 				71813ED92A5063CE00D51CE8 /* Frameworks */,
 				71813EDA2A5063CE00D51CE8 /* Resources */,
+				0CFABD22E94B5C3CBC5A3868 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +243,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CFABD22E94B5C3CBC5A3868 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoolOuGasolina/Pods-AlcoolOuGasolina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoolOuGasolina/Pods-AlcoolOuGasolina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoolOuGasolina/Pods-AlcoolOuGasolina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ED8F20AE159451F99B26A2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlcoolOuGasolina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71813ED82A5063CE00D51CE8 /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		71813EF12A5063D000D51CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B018B248C34891FDCC3F5096 /* Pods-AlcoolOuGasolina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,6 +467,7 @@
 		};
 		71813EF22A5063D000D51CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B1500D6DCC5688FEEF697B /* Pods-AlcoolOuGasolina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
