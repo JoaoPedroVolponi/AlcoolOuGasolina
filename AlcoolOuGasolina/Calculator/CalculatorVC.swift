@@ -20,6 +20,7 @@ class CalculatorVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         screen?.delegate(delegate: self)
         alert = Alert(controller: self)
     }
@@ -52,11 +53,16 @@ extension CalculatorVC: CalculatorScreenDelegate {
             let ethanolPrice: Double = (formatter.number(from: screen?.ethanolPriceTextField.text ?? "0.0") as? Double) ?? 0.0
             let gasPrice: Double = (formatter.number(from: screen?.gasPriceTextField.text ?? "0.0") as? Double) ?? 0.0
             
+            var vc: ResultVC?
+            
             if ethanolPrice / gasPrice > 0.7 {
                 print("Melhor utilizar Gasolina")
+                vc = ResultVC(bestFuel: .gas)
             } else {
                 print("Melhor utilizar Álcool")
+                vc = ResultVC(bestFuel: .ethanol)
             }
+            navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
         }
     }
     
