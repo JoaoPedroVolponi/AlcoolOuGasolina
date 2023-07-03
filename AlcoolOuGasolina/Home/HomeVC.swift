@@ -17,11 +17,21 @@ class HomeVC: UIViewController {
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      //  view.backgroundColor = .red
+        screen?.delegate(delegate: self)
+        
     }
+}
 
-
+extension HomeVC: HomeScreenDelegate {
+    func tappedStartButton() {
+        let vc = CalculatorVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
