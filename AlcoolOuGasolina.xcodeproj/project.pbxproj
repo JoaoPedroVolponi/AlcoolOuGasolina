@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		71813EE02A5063CE00D51CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EDF2A5063CE00D51CE8 /* AppDelegate.swift */; };
 		71813EE22A5063CE00D51CE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EE12A5063CE00D51CE8 /* SceneDelegate.swift */; };
-		71813EE42A5063CE00D51CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EE32A5063CE00D51CE8 /* ViewController.swift */; };
+		71813EE42A5063CE00D51CE8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EE32A5063CE00D51CE8 /* HomeVC.swift */; };
 		71813EE92A5063D000D51CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71813EE82A5063D000D51CE8 /* Assets.xcassets */; };
 		71813EEC2A5063D000D51CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71813EEA2A5063D000D51CE8 /* LaunchScreen.storyboard */; };
+		71813EF62A5068ED00D51CE8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71813EF52A5068ED00D51CE8 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71813EDC2A5063CE00D51CE8 /* AlcoolOuGasolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoolOuGasolina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71813EDF2A5063CE00D51CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71813EE12A5063CE00D51CE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71813EE32A5063CE00D51CE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71813EE32A5063CE00D51CE8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		71813EE82A5063D000D51CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71813EEB2A5063D000D51CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71813EED2A5063D000D51CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71813EF52A5068ED00D51CE8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		71813EDE2A5063CE00D51CE8 /* AlcoolOuGasolina */ = {
 			isa = PBXGroup;
 			children = (
+				71813EF32A50689A00D51CE8 /* Home */,
 				71813EDF2A5063CE00D51CE8 /* AppDelegate.swift */,
 				71813EE12A5063CE00D51CE8 /* SceneDelegate.swift */,
-				71813EE32A5063CE00D51CE8 /* ViewController.swift */,
 				71813EE82A5063D000D51CE8 /* Assets.xcassets */,
 				71813EEA2A5063D000D51CE8 /* LaunchScreen.storyboard */,
 				71813EED2A5063D000D51CE8 /* Info.plist */,
 			);
 			path = AlcoolOuGasolina;
+			sourceTree = "<group>";
+		};
+		71813EF32A50689A00D51CE8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				71813EE32A5063CE00D51CE8 /* HomeVC.swift */,
+				71813EF42A5068A500D51CE8 /* Screen */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		71813EF42A5068A500D51CE8 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				71813EF52A5068ED00D51CE8 /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71813EE42A5063CE00D51CE8 /* ViewController.swift in Sources */,
+				71813EF62A5068ED00D51CE8 /* HomeScreen.swift in Sources */,
+				71813EE42A5063CE00D51CE8 /* HomeVC.swift in Sources */,
 				71813EE02A5063CE00D51CE8 /* AppDelegate.swift in Sources */,
 				71813EE22A5063CE00D51CE8 /* SceneDelegate.swift in Sources */,
 			);
